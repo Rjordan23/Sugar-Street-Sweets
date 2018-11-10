@@ -160,7 +160,7 @@ header nav {
 header .max-height {
   position: relative;
   min-height: calc(100vh - 76px);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url("../../../img/bg/bg7.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url("../../../../img/bg/bg7.jpg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../../../img/bg/bg7.jpg");
   background-position: center;
   background-size: cover;
