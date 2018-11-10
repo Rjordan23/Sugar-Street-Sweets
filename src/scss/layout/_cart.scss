@@ -4,18 +4,18 @@
   background: rgba(255, 255, 255, .75);
   top: 0;
   right: 0;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
   width: 0;
   overflow: hidden;
-  transform: rotateY(360);
-  -webkit-transform: rotateY(360);
-  -moz-transform: rotateY(360);
-  -ms-transform: rotateY(360);
-  -o-transform: rotateY(360);
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
 
   .cart-item-remove {
     color: pink;
@@ -51,14 +51,14 @@
 .show-cart {
   width: 18rem;
   padding: 2rem 1.5rem;
-  transform: rotateY(-360);
-  -webkit-transform: rotateY(-360);
-  -moz-transform: rotateY(-360);
-  -ms-transform: rotateY(-360);
-  -o-transform: rotateY(-360);
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
+  transform: rotateY(-360deg);
+  -webkit-transform: rotateY(-360deg);
+  -moz-transform: rotateY(-360deg);
+  -ms-transform: rotateY(-360deg);
+  -o-transform: rotateY(-360deg);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
 }

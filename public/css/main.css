@@ -83,11 +83,14 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1; }
 
+html {
+  min-width: 300px; }
+
 body {
   background: #FDFFF0; }
 
 .banner-title {
-  color: pink;
+  color: #F04263;
   position: relative;
   font-size: 3rem; }
   .banner-title img {
@@ -187,18 +190,18 @@ header .max-height {
   background: rgba(255, 255, 255, 0.75);
   top: 0;
   right: 0;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
   width: 0;
   overflow: hidden;
-  transform: rotateY(360);
-  -webkit-transform: rotateY(360);
-  -moz-transform: rotateY(360);
-  -ms-transform: rotateY(360);
-  -o-transform: rotateY(360); }
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg); }
   .cart .cart-item-remove {
     color: pink;
     transition: all .1s ease-in-out;
@@ -225,16 +228,16 @@ header .max-height {
 .show-cart {
   width: 18rem;
   padding: 2rem 1.5rem;
-  transform: rotateY(-360);
-  -webkit-transform: rotateY(-360);
-  -moz-transform: rotateY(-360);
-  -ms-transform: rotateY(-360);
-  -o-transform: rotateY(-360);
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease; }
+  transform: rotateY(-360deg);
+  -webkit-transform: rotateY(-360deg);
+  -moz-transform: rotateY(-360deg);
+  -ms-transform: rotateY(-360deg);
+  -o-transform: rotateY(-360deg);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease; }
 
 #about .about-img_container {
   position: relative; }
@@ -282,6 +285,7 @@ header .max-height {
         -ms-transform: scale(1.2);
         -o-transform: scale(1.2); }
       .store .single-item .img-container .store-img {
+        max-height: 167.53px;
         transition: all 1s ease-in-out;
         -webkit-transition: all 1s ease-in-out;
         -moz-transition: all 1s ease-in-out;
@@ -312,6 +316,8 @@ header .max-height {
         -moz-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
         -o-transform: translate(0, 0); }
+    .store .single-item #store-item-price, .store .single-item .store-item-value {
+      color: #F04263; }
 
 .services {
   color: #fff;
@@ -374,7 +380,7 @@ footer .footer-contact {
     position: absolute;
     bottom: 5%;
     right: 5%;
-    width: 20rem; }
+    width: 15rem; }
 
 footer .copy {
   background: pink;
@@ -384,3 +390,7 @@ footer .copy {
   color: #1C0C00;
   font-weight: 600;
   font-size: 20px; }
+
+@media (max-width: 500px) {
+  #footer-img {
+    display: none; } }

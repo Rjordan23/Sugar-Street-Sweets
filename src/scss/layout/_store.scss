@@ -33,6 +33,7 @@
       }
 
       .store-img {
+        max-height: 167.53px;
         transition: all 1s ease-in-out;
         -webkit-transition: all 1s ease-in-out;
         -moz-transition: all 1s ease-in-out;
@@ -70,6 +71,10 @@
         -ms-transform: translate(0,0);
         -o-transform: translate(0,0);
       }
+    }
+
+    #store-item-price, .store-item-value {
+      color: #F04263;
     }
   }
 }
