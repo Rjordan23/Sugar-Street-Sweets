@@ -124,7 +124,7 @@ header nav {
     header nav .navbar-toggler .navbar-toggler-icon {
       font-size: 2.5rem; }
   header nav .nav-link {
-    color: green;
+    color: blue;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
