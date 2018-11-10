@@ -315,8 +315,8 @@ header .max-height {
 
 .services {
   color: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../../../img/bg/bg9.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../../../img/bg/bg9.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../../img/bg/bg9.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../../img/bg/bg9.jpg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -335,8 +335,8 @@ header .max-height {
   max-height: 279px; }
 
 #reviews {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(204, 99, 99, 0.3))), url("../../../img/bg/bg-1.jpeg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(204, 99, 99, 0.3)), url("../../../img/bg/bg-1.jpeg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(204, 99, 99, 0.3))), url("../../img/bg/bg-1.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(204, 99, 99, 0.3)), url("../../img/bg/bg-1.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
