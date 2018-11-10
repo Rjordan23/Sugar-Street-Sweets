@@ -1,0 +1,43 @@
+
+body {
+  background: #FDFFF0;
+}
+
+.banner-title {
+  color: pink;
+  position: relative;
+  font-size: 3rem;
+
+  // Ghosted desert image behind text (may be adjusted in section specific scss pages due to different image sizes 
+  img {
+    width: 110px;
+    position: absolute;
+    top: -40%;
+    left: -80%;
+    z-index: -1;
+    opacity: .8;
+  }
+}
+
+.btn-pink {
+  color: pink;
+  border-color: pink;
+  background: transparent;
+  font-weight: 600;
+
+  &:hover {
+    color: pink;
+    background: #1C0C00;
+  }
+}
+
+.btn-black {
+  color: #1C0C00;
+  border-color: #1C0C00;
+  font-weight: 600;
+
+  &:hover {
+    color: #1C0C00;
+    background: pink;
+  }
+}

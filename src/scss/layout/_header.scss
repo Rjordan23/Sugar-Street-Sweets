@@ -1,0 +1,101 @@
+header {
+  nav {
+    background: {
+      color: #1C0C00;
+    }
+
+     img {
+      max-width: 50px;
+    }
+    // Navbar bars
+    .navbar-toggler {
+      outline: none;
+      
+      .navbar-toggler-icon {
+        font-size: 2.5rem;
+      }
+    }
+    .nav-link {
+      color: #fff;
+      transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: pink;
+        
+        &::after {
+          content: '';
+          display: block;
+          margin: 0 auto;
+          width: 70%;
+          border-bottom: 2px solid pink;
+        }
+      }
+    }
+
+    #myNavBar {
+      color: #fff;
+    }
+
+    .cart-info__icon {
+      cursor: pointer;
+    }
+    .cart-info {
+      border: .1rem solid #fff;
+      border-radius: 2.5rem;
+      -webkit-border-radius: 2.5rem;
+      -moz-border-radius: 2.5rem;
+      -ms-border-radius: 2.5rem;
+      -o-border-radius: .25rem;
+      padding: .4rem .9rem;
+      cursor: pointer;
+
+      &:hover {
+        background: pink;
+        border-color: #fff;
+        color: #1C0C00;
+      }
+    } 
+  }
+  .max-height {
+    position: relative;
+    min-height: calc(100vh - 76px);
+    background: {
+      image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.6)), url('../../../img/bg/bg7.jpg');
+      position: center;
+      size: cover;
+      attachment: fixed; 
+      repeat: no-repeat;
+    }
+    .banner {
+      color: #fff;
+      margin: {
+        top: -4rem;
+      }
+
+      &-title {
+        color: pink;
+        font-size: 4rem;
+      }
+
+      &-link {
+        font-size: 1.5rem;
+        color: #fff;
+        border: .2rem solid #fff;
+
+        &:hover {
+          background: pink;
+          border-color: #fff;
+          color: #1C0C00;
+        }
+      }
+    }
+  }
+}
+
+
+
