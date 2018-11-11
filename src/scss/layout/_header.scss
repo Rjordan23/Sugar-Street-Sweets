@@ -26,15 +26,11 @@ header {
 
       &:hover {
         color: $clr-pink-lite;
-        
-        &::after {
-          content: '';
-          display: block;
-          margin: 0 auto;
-          width: 70%;
-          border-bottom: 2px solid $clr-pink-lite;
-        }
       }
+    }
+
+    .fa-bars {
+      color: $clr-pink-lite;
     }
 
     #myNavBar {

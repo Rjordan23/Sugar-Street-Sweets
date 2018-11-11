@@ -6,7 +6,6 @@ document.getElementById('cart-info').addEventListener('click', function() {
 });
 
 // add items to the cart
-
 (function(){
 
   const cartBtn = document.querySelectorAll('.store-item-icon');
@@ -32,7 +31,6 @@ document.getElementById('cart-info').addEventListener('click', function() {
       let finalPrice = price.slice(1).trim();
 
       item.price = finalPrice
-
 
       const cartItem = document.createElement('div');
         cartItem.classList.add(
@@ -65,9 +63,6 @@ document.getElementById('cart-info').addEventListener('click', function() {
       alert('item added to the cart!');
 
       showTotals();
-
-
-
     }
     })
   })
@@ -82,20 +77,16 @@ document.getElementById('cart-info').addEventListener('click', function() {
       total.push(parseFloat(item.textContent));
     })
 
-
     const totalMoney = total.reduce(function(total,item) {
       total += item;
       return total;
     },0)
 
     const finalMoney = totalMoney.toFixed(2);
-    console.log(finalMoney);
 
     document.getElementById('cart-total').textContent = finalMoney;
     document.querySelector('.item-total').textContent = finalMoney;
     document.getElementById('item-count').textContent = total.length;
-
-
   };
 
 

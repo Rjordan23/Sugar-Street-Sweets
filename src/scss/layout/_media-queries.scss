@@ -3,3 +3,27 @@
     display: none;
   }
 }
+
+
+@media (min-width: 993px) {
+  .single-item {
+
+    .card-body {
+      height: 80px;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .single-item {
+
+    .card {
+      &-body {
+        height: 90px;
+      }
+      &-img-top {
+        height: 160px;
+      }
+    }
+  }
+}
