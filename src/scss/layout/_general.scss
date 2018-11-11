@@ -4,44 +4,53 @@ html {
 }
 
 body {
-  background: #FDFFF0;
+  background: $clr-offwhite;
 }
 
-.banner-title {
-  color: #F04263;
-  position: relative;
-  font-size: 3rem;
+.banner {
 
-  // Ghosted desert image behind text (may be adjusted in section specific scss pages due to different image sizes 
+  &-start {
+    color: $clr-brown;
+  }
+
+  &-title {
+    color: $clr-pink-dark;
+    position: relative;
+    font-size: 3rem;
+
+    // Ghosted desert image behind text (may be adjusted in section specific scss pages due to different image sizes 
   img {
     width: 110px;
     position: absolute;
     top: -40%;
     left: -80%;
     z-index: -1;
-    opacity: .8;
+    opacity: .9;
   }
+  }
+
+  
 }
 
 .btn-pink {
-  color: pink;
-  border-color: pink;
+  color: $clr-pink-dark;
+  border-color: $clr-pink-dark;
   background: transparent;
   font-weight: 600;
 
   &:hover {
-    color: pink;
-    background: #1C0C00;
+    color: $clr-white;
+    background: $clr-pink-dark;
   }
 }
 
 .btn-black {
-  color: #1C0C00;
-  border-color: #1C0C00;
+  color: $clr-brown;
+  border-color: $clr-brown;
   font-weight: 600;
 
   &:hover {
-    color: #1C0C00;
-    background: pink;
+    color: $clr-brown;
+    background: $clr-pink-lite;
   }
 }

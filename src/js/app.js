@@ -22,7 +22,7 @@ document.getElementById('cart-info').addEventListener('click', function() {
       let partPath = fullPath.slice(pos);
 
       const item = {};
-        item.img = `cart-img${partPath}`
+        item.img = `img-cart${partPath}`
 
       let name = event.target.parentElement.parentElement.nextElementSibling.children[0].children[0].textContent;
         item.name = name;
@@ -45,7 +45,7 @@ document.getElementById('cart-info').addEventListener('click', function() {
 
         cartItem.innerHTML = `
         <!-- https://www.iconfinder.com/icons/61138/cake_donut_icon -->
-        <img src= ${item.img}"img/cart-img/donut.png" class="img-fluid" id="item-img" alt="">
+        <img src= "${item.img}" class="img-fluid" id="item-img" alt="">
         <div class="item-text">
           <p id="cart-item-title" class="cart-item-title font-weight-bold mb-0">${item.name}</p>
           <span>$</span>
@@ -64,12 +64,41 @@ document.getElementById('cart-info').addEventListener('click', function() {
       cart.insertBefore(cartItem, total);
       alert('item added to the cart!');
 
+      showTotals();
+
 
 
     }
-
     })
   })
+
+  // Show Total
+  function showTotals() {
+
+    const total = [];
+    const items = document.querySelectorAll('.cart-item-price');
+
+    items.forEach(function(item) {
+      total.push(parseFloat(item.textContent));
+    })
+
+
+    const totalMoney = total.reduce(function(total,item) {
+      total += item;
+      return total;
+    },0)
+
+    const finalMoney = totalMoney.toFixed(2);
+    console.log(finalMoney);
+
+    document.getElementById('cart-total').textContent = finalMoney;
+    document.querySelector('.item-total').textContent = finalMoney;
+    document.getElementById('item-count').textContent = total.length;
+
+
+  };
+
+
 
 
 

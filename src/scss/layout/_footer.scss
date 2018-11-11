@@ -3,40 +3,53 @@ footer {
   .footer {
 
     &-title {
-      color: #1C0C00;
+      color: $clr-brown;
   
       background: {
-        color: #fff;
+        color: $clr-white;
       }
     }
   
     &-contact {
       position: relative;
       overflow: hidden;
-      color: #fff; 
+      color: $clr-white; 
       background: {
         color: #1C0C00;
       }
   
       h3 {
-        color: #fff;
+        color: $clr-white;
       }
   
-      #footer-img {
+      .footer-img {
         position: absolute;
-        bottom: 5%;
-        right: 5%;
-        width: 15rem;
+      }
+
+      .muffin {
+        bottom: 0%;
+        right: 0%;
+        z-index: 2;
+      }
+      .cookie {
+        bottom: 0;
+        right: 10%;
+        z-index: 1;
+      }
+      .shortcake {
+        bottom: 0;
+        right: 20%;
+        z-index: 0;
       }
     }
   }
 
   .copy {
-    background: pink;
+    background: $clr-pink-lite;
     padding: .5rem 0;
     margin: 0;
     text-align: center;
-    color: #1C0C00;
+    color: $clr-brown;
     font: {
       weight: 600;
       size: 20px;

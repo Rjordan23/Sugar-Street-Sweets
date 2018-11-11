@@ -1,7 +1,7 @@
 header {
   nav {
     background: {
-      color: #1C0C00;
+      color: $clr-brown;
     }
 
      img {
@@ -16,7 +16,7 @@ header {
       }
     }
     .nav-link {
-      color: #fff;
+      color: $clr-white;
       transition: all .3s ease-in-out;
       -webkit-transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
@@ -25,27 +25,27 @@ header {
       font-size: 1.5rem;
 
       &:hover {
-        color: pink;
+        color: $clr-pink-lite;
         
         &::after {
           content: '';
           display: block;
           margin: 0 auto;
           width: 70%;
-          border-bottom: 2px solid pink;
+          border-bottom: 2px solid $clr-pink-lite;
         }
       }
     }
 
     #myNavBar {
-      color: #fff;
+      color: $clr-white;
     }
 
     .cart-info__icon {
       cursor: pointer;
     }
     .cart-info {
-      border: .1rem solid #fff;
+      border: .1rem solid $clr-white;
       border-radius: 2.5rem;
       -webkit-border-radius: 2.5rem;
       -moz-border-radius: 2.5rem;
@@ -55,12 +55,13 @@ header {
       cursor: pointer;
 
       &:hover {
-        background: pink;
-        border-color: #fff;
-        color: #1C0C00;
+        background: $clr-pink-lite;
+        border-color: $clr-white;
+        color: $clr-brown;
       }
     } 
   }
+  
   .max-height {
     position: relative;
     min-height: calc(100vh - 76px);
@@ -72,28 +73,32 @@ header {
       repeat: no-repeat;
     }
     .banner {
-      color: #fff;
+      color: $clr-white;
       margin: {
         top: -4rem;
       }
 
       &-title {
-        color: pink;
+        color: $clr-pink-lite;
         font-size: 4rem;
       }
 
       &-link {
         font-size: 1.5rem;
-        color: #fff;
-        border: .2rem solid #fff;
+        color: $clr-white;
+        border: .2rem solid $clr-white;
 
         &:hover {
-          background: pink;
-          border-color: #fff;
-          color: #1C0C00;
+          background: $clr-pink-lite;
+          border-color: $clr-white;
+          color: $clr-brown;
         }
       }
     }
+  }
+
+  #item-img {
+    padding-right: 5px;
   }
 }
 

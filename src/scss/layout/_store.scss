@@ -4,8 +4,9 @@
   }
 
   .search-box {
-    background: pink;
-    color: black;
+    background: $clr-pink-dark;
+    color: $clr-brown;
+    cursor: pointer;
   }
 
   .single-item {
@@ -15,9 +16,9 @@
     -ms-transition: all .5 linear;
     -o-transition: all .5 linear;
 
-    &:hover {
-      box-shadow: 0 10px 15px rgba(0,0,0, .5);
-    }
+    // &:hover {
+    //   box-shadow: 0 10px 15px rgba(0,0,0, .5);
+    // }
 
     .img-container {
       position: relative;
@@ -46,13 +47,13 @@
         bottom: 0;
         right: 0;
         padding: .75rem;
-        background: yellow;
+        background: $clr-gold;
         border-top-left-radius: 1rem;
-        transition: all 1s ease-in-out;
-        -webkit-transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
         transform: translate(100%, 100%);
         -webkit-transform: translate(100%, 100%);
         -moz-transform: translate(100%, 100%);
@@ -60,7 +61,7 @@
         -o-transform: translate(100%, 100%);
 
         &:hover {
-          color: #fff;
+          color: $clr-pink-dark;
         }
       }
 
@@ -74,7 +75,7 @@
     }
 
     #store-item-price, .store-item-value {
-      color: #F04263;
+      color: $clr-pink-dark;
     }
   }
 }
