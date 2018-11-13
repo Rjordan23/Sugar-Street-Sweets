@@ -548,9 +548,6 @@ footer .copy {
   background: rgba(0, 0, 0, 0.6);
   display: none; }
 
-.lightbox .show {
-  display: block; }
-
 .lightbox-holder {
   position: relative; }
 
@@ -588,7 +585,10 @@ footer .copy {
   .lightbox-control:hover {
     color: #ffd700; }
 
-.lightbox .btnLeft {
+.show {
+  display: block; }
+
+.btnLeft {
   top: 50%;
   left: 0;
   transform: translateX(-60%);
@@ -597,7 +597,7 @@ footer .copy {
   -ms-transform: translateX(-60%);
   -o-transform: translateX(-60%); }
 
-.lightbox .btnRight {
+.btnRight {
   top: 50%;
   right: 0;
   transform: translateX(60%);
