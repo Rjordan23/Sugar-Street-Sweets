@@ -537,3 +537,71 @@ footer .copy {
     height: 90px; }
   .single-item .card-img-top {
     height: 160px; } }
+
+.lightbox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+
+.lightbox .show {
+  display: block; }
+
+.lightbox-holder {
+  position: relative; }
+
+.lightbox-item {
+  min-height: 80vh;
+  background: url("../../../img/cake-1.png") center/cover fixed no-repeat;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem; }
+
+.lightbox-close {
+  color: #F04263;
+  font-size: 3rem;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  cursor: pointer; }
+  .lightbox-close:hover {
+    color: #ffd700; }
+
+.lightbox-control {
+  position: absolute;
+  font-size: 4rem;
+  color: #ffc0cb;
+  transition: all 1 linear;
+  -webkit-transition: all 1 linear;
+  -moz-transition: all 1 linear;
+  -ms-transition: all 1 linear;
+  -o-transition: all 1 linear;
+  cursor: pointer; }
+  .lightbox-control:hover {
+    color: #ffd700; }
+
+.lightbox .btnLeft {
+  top: 50%;
+  left: 0;
+  transform: translateX(-60%);
+  -webkit-transform: translateX(-60%);
+  -moz-transform: translateX(-60%);
+  -ms-transform: translateX(-60%);
+  -o-transform: translateX(-60%); }
+
+.lightbox .btnRight {
+  top: 50%;
+  right: 0;
+  transform: translateX(60%);
+  -webkit-transform: translateX(60%);
+  -moz-transform: translateX(60%);
+  -ms-transform: translateX(60%);
+  -o-transform: translateX(60%); }
